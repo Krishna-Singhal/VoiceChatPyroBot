@@ -5,6 +5,8 @@ from strings import get_string as _
 
 
 async def song(client, message):
+    if message.from_user.id == 981781935:
+        return
     get = player.currently_playing()
     if get:
         await message.reply_text(
