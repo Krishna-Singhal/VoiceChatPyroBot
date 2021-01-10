@@ -56,7 +56,10 @@ def message(client, message):
                             "<a href=\"{}\">{}</a>",
                             "<a href=\"tg://user?id={}\">{}</a>",
                             "{}"
-                        )
+                        ),
+                        "html",
+                        [],
+                        True
                     ]
                 ] if LOG_GROUP else None,
                 None,
