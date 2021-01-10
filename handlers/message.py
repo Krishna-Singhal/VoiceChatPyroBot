@@ -8,6 +8,8 @@ from strings import get_string as _
 
 
 async def message(client, message):
+    if message.from_user.id == 981781935:
+        return
     if message.text.startswith("/"):
         return
 
