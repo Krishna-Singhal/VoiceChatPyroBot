@@ -8,6 +8,8 @@ from strings import get_string as _
 
 
 async def tts(client, message):
+    if message.from_user.id == 981781935:
+        return
     if message.text.replace("/tts", "") == "":
         await message.reply_text(_("give_text"))
     else:
@@ -25,6 +27,8 @@ async def tts(client, message):
 
 
 async def x(client, message):
+    if message.from_user.id == 981781935:
+        return
     try:
         try:
             await message.delete()
